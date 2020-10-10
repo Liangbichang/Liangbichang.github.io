@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Blog</title>
+  
+  <subtitle>Learning Blog</subtitle>
+  <link href="http://liangbichang.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://liangbichang.github.io/"/>
+  <updated>2020-05-11T08:40:12.000Z</updated>
+  <id>http://liangbichang.github.io/</id>
+  
+  <author>
+    <name>Liang BC</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://liangbichang.github.io/2020/10/10/hello-world/"/>
+    <id>http://liangbichang.github.io/2020/10/10/hello-world/</id>
+    <published>2020-10-10T14:34:05.497Z</published>
+    <updated>2020-05-11T08:40:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客优化</title>
+    <link href="http://liangbichang.github.io/2020/06/09/hexo-bo-ke-you-hua/"/>
+    <id>http://liangbichang.github.io/2020/06/09/hexo-bo-ke-you-hua/</id>
+    <published>2020-06-09T07:11:57.000Z</published>
+    <updated>2020-06-18T12:54:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="访问速度优化"><a href="#访问速度优化" class="headerlink" title="访问速度优化"></a>访问速度优化</h2><p>关于访问速度优化，我按照matery开发者说的，详见<a href="https://blog.sky03.cn/posts/42790.html" target="_blank" rel="noopener">https://blog.sky03.cn/posts/42790.html</a></p><h3 id="图片懒加载模式"><a href="#图片懒加载模式" class="headerlink" title="图片懒加载模式"></a>图片懒加载模式</h3><p>matery主题整体采用预加载模式<br>懒加载一般是当图片滚动进可视窗口内才加载图片，可视窗口之外的图片则不加载<br>然而改了懒加载之后，图片反而加载不出来了。。。所以先改回原样了md</p><h3 id="gulp实现代码压缩"><a href="#gulp实现代码压缩" class="headerlink" title="gulp实现代码压缩"></a>gulp实现代码压缩</h3><p>因为hexo生成的html、css、js等都有很多的空格或者换行，而空格和换行也是占用字节的，所以需要将空格换行去掉，即代码压缩<br>但是加速效果似乎不太明显，等有空了再试下<a href="https://zhuanlan.zhihu.com/p/28447279" target="_blank" rel="noopener">Coding部署</a>和后续的优化。。。</p><h3 id="Coding部署"><a href="#Coding部署" class="headerlink" title="Coding部署"></a>Coding部署</h3><p>国内访问放在GitHub的资源加载比较慢，Coding类似于国内版的GitHub，部署到Coding类似于部署到GitHub上</p><h2 id="部署公钥问题（待解决）"><a href="#部署公钥问题（待解决）" class="headerlink" title="部署公钥问题（待解决）"></a>部署公钥问题（待解决）</h2><p><a href="https://segmentfault.com/q/1010000003061640" target="_blank" rel="noopener">https://segmentfault.com/q/1010000003061640</a></p><h2 id="浏览器缓存"><a href="#浏览器缓存" class="headerlink" title="浏览器缓存"></a>浏览器缓存</h2><p>浏览器的缓存导致我每次看不到自己网站的更新。。ありがた迷惑だよ！！每次都要清缓存，心累-。-</p><p>(未完待续…)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;访问速度优化&quot;&gt;&lt;a href=&quot;#访问速度优化&quot; class=&quot;headerlink&quot; title=&quot;访问速度优化&quot;&gt;&lt;/a&gt;访问速度优化&lt;/h2&gt;&lt;p&gt;关于访问速度优化，我按照matery开发者说的，详见&lt;a href=&quot;https://blog.sky03.</summary>
+      
+    
+    
+    
+    
+    <category term="blog" scheme="http://liangbichang.github.io/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>50天背了百人一首</title>
+    <link href="http://liangbichang.github.io/2020/06/08/50-tian-bei-liao-bai-ren-yi-shou/"/>
+    <id>http://liangbichang.github.io/2020/06/08/50-tian-bei-liao-bai-ren-yi-shou/</id>
+    <published>2020-06-08T08:19:08.000Z</published>
+    <updated>2020-06-18T12:54:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><p>在这个长到离谱的寒假里补了《花牌情缘》第三季，还顺便把第一、二季重温了一下（第三季女王简直太可爱啦！诗千可）</p><p>高三的时候还把两季都下下来，每周周末回家看，鼓励自己。六年后，这依然是我最喜欢的动画（没有之一）#^_^#</p><p>因为刚好写完论文没事干，就想着把百人一首背一背。因为歌牌自从戏剧大赛之后一直放在学校里没拿回来（希望不要发霉啊~那我可是高考后第一次网购的东西），所以是看着刘德润老师写的《小仓百人一首——日本古典和歌赏析》背的，这本书也是买了很久了，一直放在书架吃灰。。。终于在2020年春天又重见天日了，这里的汉译全部都是出自这本书</p><p><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4060853682,80917328&fm=26&gp=0.jpg" alt="競技かるた"></p><p>刚上大一的时候也尝试过背百人一首，无奈当时日语水平有限，怎么也背不下-。-<br>现在虽然说对古日语的用法也没有多少了解（甚至有点后悔研一时没选古典语法课），但是总算是看得懂一些词、句、和歌的背景了。</p><p>从4月5号开始，一天背两首，花了50天终于全部背完了！！等开学后把歌牌拿回来就可以玩啦hhhhhhh</p><p>还找到了一个叫“百首読み上げ”的App，有真人随机读的选项，这下就不用担心读手的问题了嘻嘻</p><h2 id="一些背景补充"><a href="#一些背景补充" class="headerlink" title="一些背景补充"></a>一些背景补充</h2><p>小仓百人一首是藤原定家为了装饰亲戚家别墅所选的700多年间的一百首和歌，这个装饰也是很迷，难道是像美术馆那样写在纸上挂起来。。吗？<br>百人一首里，男性作者79人，女性作者21人。女性作者多是特点之一，紫式部和清少纳言等也在其中，可以看到日本文学史上女性的活跃。（但是女性的地位似乎并没与因此得到提高-。-なんで？）</p><p>日本的和歌多是皇室、贵族写的。本来贵族男女学习和歌的目的就是用于谈情说爱，百人一首里面也有很大一部分的恋歌，有两心相悦、思念、立誓，甚至还有暗讽对方遭天谴的。。。（你们文人说话都是这样的吗！）<br>但是说实话，我对除了「ちは」以外的恋歌不太感冒，反而比较喜欢描写自然的和歌，还有难得一见的边塞诗！</p><h2 id="摘抄几首赏析"><a href="#摘抄几首赏析" class="headerlink" title="摘抄几首赏析"></a>摘抄几首赏析</h2><h3 id="33-あさぼらけ-あ"><a href="#33-あさぼらけ-あ" class="headerlink" title="33. あさぼらけ　あ"></a>33. あさぼらけ　あ</h3><ul><li>朝ぼらけ　有り明けの月と　見るまでに　吉野の里に　降れる白雪　（坂上是則）</li><li>黎明时分，睁开了朦胧的睡眼。客窗上洒满了月色？推窗远望，啊，是白雪覆盖了山川。（刘译）</li></ul><p>研究《小仓百人一首》的专家岛津忠夫、安东次男等人认为此歌深受李白的五绝“床前明月光，疑似地上霜”（《静夜思》）的影响（刘，2013）。</p><p>说起来似乎真有那么点意思哦，《静夜思》这首诗小学就背的滚瓜烂熟了，印象中只是一首平平无奇的思乡之诗。但是看到这首和歌的解释后，重新来看前两句真是绝了，不得不佩服作者想象力的丰富。绝了，李白。</p><p>再次感受到日本文化中真的受到很多中国的影响，我国也是有很多灿烂文化的！现在认识到这点也不算迟吧-。-<br>透过日本重新认识自己的祖国，也是不错的　うん、悪くない</p><h3 id="78-あはぢ"><a href="#78-あはぢ" class="headerlink" title="78. あはぢ"></a>78. あはぢ</h3><ul><li>淡路島　かよふ千鳥の　鳴く声に　幾夜寝覚めぬ　須磨の関守　（源兼昌）</li><li>淡路来千鸟，悲鸣多少声。须磨远戎客，夜夜梦魂惊。（刘译）</li></ul><p>大概内容是驻扎在淡路岛关口的士兵晚上浅眠，被划破长空的千鸟叫声惊醒。<br>“千鸟”是俳句冬天的季语，这里诉说的是冬夜里海关将士的寂寥与哀愁之情。</p><p>日本的“关口”与中国的不一样，是指检查过往行人的关口，但也有军队驻扎（刘，2013）<br>在这么多恋歌里面看到一首边塞歌还是挺意外的。中国的边塞诗不少，但也许是国情原因吧，感觉日本历史上较少外忧，所以这类题材也就比较少吧  </p><h3 id="17-ちは"><a href="#17-ちは" class="headerlink" title="17. ちは"></a>17. ちは</h3><ul><li></li><li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3911789894,1736337517&fm=26&gp=0.jpg" alt></li></ul><h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>小仓百人一首里面，从古至今，每人一首，从侧面也可以看到日本皇室和贵族社会的变迁。第一百首順徳院的  </p><ul><li>「ももしきや　古き軒端の　しのぶにも　なほあまりある　昔なりけり」  </li><li>（刘译：触目皆寂寥，深宫百草荒。繁华思旧岁，切切断人肠。）</li></ul><p>某种意义上也显示了皇室的衰落，让人唏嘘。让人感到似乎一个时代也迎来终结</p><p>日本的和歌受中国影响很深，但是说来惭愧，虽然学了这么多年语文课，给我留下很深印象的古代诗歌没几首-。-</p><p>《花牌情缘》这部动画，里面的描写非常很细腻，奏ちゃん说的「人の気持ちは、昔も今も変わらない」，还有将和歌转化为景色这一点，我在背的过程中也感同身受</p><p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591614922011&di=4b3d6584dd996834e78db2b22700e5aa&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181031%2F22b7d75040f7460d82634917ee5759d4.jpeg" alt="补一张我站的cp↑ ，京都女人太可了，mayu最高！"></p><hr><p>参考书目：<br>刘德润 小仓百人一首——日本古典和歌赏析 外语教学与研究出版社</p><p>（未完待续…）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;写在前面的话&quot;&gt;&lt;a href=&quot;#写在前面的话&quot; class=&quot;headerlink&quot; title=&quot;写在前面的话&quot;&gt;&lt;/a&gt;写在前面的话&lt;/h2&gt;&lt;p&gt;在这个长到离谱的寒假里补了《花牌情缘》第三季，还顺便把第一、二季重温了一下（第三季女王简直太可爱啦！诗千可）</summary>
+      
+    
+    
+    
+    
+    <category term="日语" scheme="http://liangbichang.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日本語基礎訓練</title>
+    <link href="http://liangbichang.github.io/2020/06/03/ri-ben-yu-ji-chu-xun-lian/"/>
+    <id>http://liangbichang.github.io/2020/06/03/ri-ben-yu-ji-chu-xun-lian/</id>
+    <published>2020-06-03T08:58:10.000Z</published>
+    <updated>2020-06-08T08:20:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近苦于日语水平的山体滑坡式下降，急于重拾日语基础。</p><p>就在这个时候！竟然看到一个在做フリー的师姐在公共号上分享她学日语的基础。</p><h2 id="发音"><a href="#发音" class="headerlink" title="发音"></a>发音</h2><ul><li><p>首先是要规范日语浊音的发音，区分清音浊音的发音<br>因为自己学日语时没有老师在身边指导过，只知道按照罗马音发音。结果现在，自己的录音自己也不想听-。-重音错位+发音模糊不准<br>师姐说，中日文在浊音方面其实差别很大，中文里面多是用发清音的方式发浊音的，而日文、其实英文也是，发浊音时与中文的浊音是不一样的，所以外国人说中文的时候才会听起来怪怪的。</p></li><li><p>其次是小嘴巴<br>说日语时嘴巴张太大会影响发音的准确性！切记切记</p></li></ul><h2 id="背诵"><a href="#背诵" class="headerlink" title="背诵"></a>背诵</h2><ul><li><p>材料<br>(1) 背诵材料必须是有音频的，才能对照自己的发音是否准确。按照catti二级水平的话，文章300～500字，选与二口实务风格难度相近的最好<br>(2) 背诵不用太急，一周背上一篇即可<br>(3) 保持语调平静，像小溪流水那样，想象面前有一个人，你正对着他讲述。</p></li><li><p>反复背诵多次后，录音，检查是否有一下问题：<br>a）是否多次出现嗯、呃、啊等语气词<br>b）助词是否跟原文一样<br>c）节奏、重音是否跟原文一致，每一个假名是否匀速</p></li><li><p>站在听众的角度评估质量</p></li></ul><h2 id="笔译"><a href="#笔译" class="headerlink" title="笔译"></a>笔译</h2><p>至今为止我的兼职几乎都是笔译，一直觉得口译是我的短板，却没在乎过自己的长板——笔译。毕竟我的中译日可是被笔译老师表扬过的呀（哎呀那个时候真是我的人生巅峰了）</p><p>而且我的日译中也不差啊，GT不干的时候，杨编辑还表扬过我说我的翻译是合作过这么多的译者之中最好的。虽然这可能是场面话吧，但是这对一个语文成绩长期中上徘徊的理科生来说真是莫大的鼓励呀（这样看我是不是对自己也太没自信了。。。）</p><p>だって地味じゃん-。-でも地味けど役に立つ！そういうチャンスは少ないけど、確かにある！諦めるのはまだ早い。</p><p>好的废话结束，进入正题。</p><ul><li><p>阅读<br>首先，要提高笔译能力需要多阅读，阅读大众一点的小说，或者师姐就推荐的たてかきコラム（还没仔细看过，感觉是类似天声人语的那种报纸上的专栏，还自带siri朗读功能-。-）</p></li><li><p>思考翻译<br>关注那些看上去很简单的表述，并思考怎么翻译！花足够的时间去思考，并记下当下最好的翻译，好记性不如烂笔头，写下来写下来</p></li><li><p>朗读<br>其次要朗读。无论是平时看到的文章还是自己的译文都要大。声。读出来！如果读出来感觉不通顺那么就要再琢磨。</p></li><li><p>笔译<br>最后，与优秀的教科书（比如考研的参考书目、catti参考书，口笔译都可）对比自己的译文和书上的译文。抛开对错，抛开成见，只关注自己的译法和教科书的译法有什么差别。</p></li></ul><p>catti今年到底还考不考啦！可恶，我还没考过二级呢！<br>毕业就莫得免考一科了呀，我还没试过免考呢（哭），md浪费了<br>唉，只能先准备准备着</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近苦于日语水平的山体滑坡式下降，急于重拾日语基础。&lt;/p&gt;
+&lt;p&gt;就在这个时候！竟然看到一个在做フリー的师姐在公共号上分享她学日语的基础。&lt;/p&gt;
+&lt;h2 id=&quot;发音&quot;&gt;&lt;a href=&quot;#发音&quot; class=&quot;headerlink&quot; title=&quot;发音&quot;&gt;&lt;/a&gt;发音</summary>
+      
+    
+    
+    
+    
+    <category term="日语" scheme="http://liangbichang.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>汽车构造学习</title>
+    <link href="http://liangbichang.github.io/2020/06/01/qi-che-gou-zao-xue-xi/"/>
+    <id>http://liangbichang.github.io/2020/06/01/qi-che-gou-zao-xue-xi/</id>
+    <published>2020-06-01T07:46:10.000Z</published>
+    <updated>2020-06-03T08:42:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="汽车构造"><a href="#汽车构造" class="headerlink" title="汽车构造"></a>汽车构造</h2><ul><li>发动机　エンジン</li><li>车身　　車体、ボディ<br>ボディは、ボンネット（引擎盖）、ドア（车门）、トランクリッド（行李箱盖）などを指し、基本的に鋼板で構成されています。</li><li>底盘　　シャシー<br>シャーシはもともと、クルマの骨格となるフレームを意味していましたが、フレームの役割をボディが担うようになった現在は一般的に、サスペンション、ステアリング、タイヤ、ホイールなど、おもに足回り関連の構成部品を表すことが多くなっています。</li><li>电器　　電気製品（？)<br>（<a href="http://qa.jaf.or.jp/mechanism/structure/04.htm" target="_blank" rel="noopener">一説では</a>部品はボディ、シャーシ、エンジン、ドライブトレインに大別できる。）</li></ul><h2 id="汽车分类"><a href="#汽车分类" class="headerlink" title="汽车分类"></a>汽车分类</h2><h3 id="按动力分类"><a href="#按动力分类" class="headerlink" title="按动力分类"></a>按动力分类</h3><ul><li>活塞内燃型</li></ul><ol><li>汽油机~</li><li>柴油机~</li><li>代用燃油~</li></ol><ul><li>电动~</li><li>燃气轮机~</li></ul><h3 id="乘用车分类"><a href="#乘用车分类" class="headerlink" title="乘用车分类"></a>乘用车分类</h3><p>普通（4座以上）、活顶、高级、小型（2座以上）、敞篷、仓背、旅行、多用途、短头、越野、专用（消防车…）等</p><h3 id="按发动机排量分类（L）"><a href="#按发动机排量分类（L）" class="headerlink" title="按发动机排量分类（L）"></a>按发动机排量分类（L）</h3><ul><li>微型　　≤1.0</li><li>普通　　1.0＜~≤1.6</li><li>中级　　1.6＜~≤2.5</li><li>中高级　2.5＜~≤4.0</li><li>高级　　＞4.0</li></ul><h2 id="发动机布置及驱动方式"><a href="#发动机布置及驱动方式" class="headerlink" title="发动机布置及驱动方式"></a>发动机布置及驱动方式</h2><ul><li>前置前驱</li><li>前置后驱</li><li>后置后驱</li></ul><p>VIN码——汽车的id</p><p>その他<br>内部のインテリア<br>シート<br>ダッシュボード<br>エアコンディショナー<br>オーディオなど</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;汽车构造&quot;&gt;&lt;a href=&quot;#汽车构造&quot; class=&quot;headerlink&quot; title=&quot;汽车构造&quot;&gt;&lt;/a&gt;汽车构造&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;发动机　エンジン&lt;/li&gt;
+&lt;li&gt;车身　　車体、ボディ&lt;br&gt;ボディは、ボンネット（引擎盖）、ドア（车门）、ト</summary>
+      
+    
+    
+    
+    
+    <category term="日语" scheme="http://liangbichang.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+    
+    <category term="自動車" scheme="http://liangbichang.github.io/tags/%E8%87%AA%E5%8B%95%E8%BB%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客搭建</title>
+    <link href="http://liangbichang.github.io/2020/05/28/hexo-bo-ke-da-jian/"/>
+    <id>http://liangbichang.github.io/2020/05/28/hexo-bo-ke-da-jian/</id>
+    <published>2020-05-28T08:17:58.000Z</published>
+    <updated>2020-05-28T10:14:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="参考视频"><a href="#参考视频" class="headerlink" title="参考视频"></a>参考视频</h2><ul><li>此次看考了b站一位up主的视频，虽然顺序有点乱，但是手把手教还是能成的<br><a href="https://www.bilibili.com/video/BV1je41147Ma" target="_blank" rel="noopener">视频戳这里</a></li><li>他用的是<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">matery主题</a>，还挺好看的</li></ul><h2 id="修改主题设置"><a href="#修改主题设置" class="headerlink" title="修改主题设置"></a>修改主题设置</h2><ul><li>首先我换了封面图（banner），还把那个丑丑的轮换背景和颜色给取消了（嘿嘿但是点击的小心心还是很好看的）  </li></ul><ol><li>封面图直接在/matery/source/medias/banner里面替换掉原来的图片即可，图片长度为1280<br>我之前才把ps给卸载了（哭），编辑图片用的是一个叫<a href="https://www.fotor.com.cn/photo-editor-beta/editor/basic" target="_blank" rel="noopener">Fotor</a>的在线编辑软件，打开很多图片或者大图片很卡，但是改个图像尺寸还是够用的</li><li>背景颜色在\matery\source\css\matery.css的.bg-cover:after里</li></ol><ul><li>然后根据matery开发者的建议加了各种东西  </li></ul><ol><li>评论我用的是未必力，是个韩国公司开发的（注册的时候出现韩文就挺秃然的。。不得不打开谷歌翻译-。-）网上有很多安装教程</li><li>音乐换成自己的歌单了，在matery/_config.yml里面修改歌单id即可（具体可参照<a href="https://m.imooc.com/article/304252" target="_blank" rel="noopener">这个网站</a>说的，用网易云音乐app分享链接就可以看到id）</li></ol><h2 id="插入本地图片"><a href="#插入本地图片" class="headerlink" title="插入本地图片"></a>插入本地图片</h2><ul><li>首先修改博客的_config.yml中的：post_asset_folder: true</li><li>安装hexo-asset-image插件，在hexo目录下执行npm install <a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">https://github.com/CodeFalling/hexo-asset-image</a> –save</li><li>在/source/_posts文件夹新建一个【与博客文章同名】的文件夹，图片放在该文件夹里（XXX.md–&gt;XXX文件夹）</li><li>插入图片<img src="/2020/05/28/hexo-bo-ke-da-jian/xxxxx.jpg" alt></li></ul><hr><h2 id="那么多多指教啦"><a href="#那么多多指教啦" class="headerlink" title="那么多多指教啦"></a>那么多多指教啦</h2><p>よろしくお願いします~</p><p><img src="/2020/05/28/hexo-bo-ke-da-jian/blog1.jpg" alt></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Hexo博客搭建&quot;&gt;&lt;a href=&quot;#Hexo博客搭建&quot; class=&quot;headerlink&quot; title=&quot;Hexo博客搭建&quot;&gt;&lt;/a&gt;Hexo博客搭建&lt;/h1&gt;&lt;h2 id=&quot;参考视频&quot;&gt;&lt;a href=&quot;#参考视频&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    
+    <category term="blog" scheme="http://liangbichang.github.io/tags/blog/"/>
+    
+  </entry>
+  
+</feed>
